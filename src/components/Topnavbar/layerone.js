@@ -1,5 +1,6 @@
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import ChildImage from "../../images/jgcap.png";
+import ChildImage1 from "../../images/star.png";
 const Layerone = () => {
   return (
     <>
@@ -7,17 +8,14 @@ const Layerone = () => {
         sx={{
           width: "100%",
           height: "749px",
-          flexShrink: 0,
           zIndex: -1,
-          // opacity: 0.5,
           bgcolor: "black",
           position: "absolute",
-          // mixBlendMode: "overlay",
         }}
       >
         <Box
           sx={{
-            width: "993px",
+            width: "63%",
             height: "354px",
             flexShrink: 0,
             ml: 65,
@@ -27,52 +25,21 @@ const Layerone = () => {
             background: "var(--Pimary-colour, #F07E15)",
           }}
         ></Box>
-
-        {/* <img src="./images/rg.png" alt="" /> */}
-        {/* <Grid>
-        <Grid>
-          <Box
-            sx={{
-              width: "100%",
-              height: "654.951px",
-              flexShrink: 0,
-            }}
-          >
-            <img src="./images/jgcap.png" alt="" />
-          </Box>
-        </Grid>
-
-        <Typography
-          sx={{
-            width: "100%",
-            height: "151px",
-            flexShrink: 0,
-            color: "balck",
-
-            fontFamily: "Syne",
-            fontSize: "135px",
-            fontStyle: "normal",
-            fontWeight: 800,
-            lineHeight: "102.6px",
-          }}
-        >
-          Fresh
-        </Typography>
-      </Grid> */}
       </Box>
       <Box>
-        <Grid container>
-          <Grid item md={8}>
-            <Stack direction={"column"} spacing={0}>
+        <Grid container justifyContent={"center"}>
+          <Grid item md={6}>
+            <Stack direction={"column"}>
               <Typography
                 component={"div"}
                 sx={{
                   position: "relative",
-                  // zIndex: -1,
                   fontSize: 170,
+                  ml: 20,
                   width: 200,
+                  height: 110,
                   color: "white",
-                  fontWeight: "bold",
+                  fontWeight: 800,
                 }}
               >
                 Fresh
@@ -80,14 +47,14 @@ const Layerone = () => {
               <Typography
                 component={"div"}
                 sx={{
-                  // position: "relative",
-                  // zIndex: -1,
-                  fontSize: 170,
-                  width: 200,
-                  ml: 60,
-                  fontFamily: "Syne",
+                  WebkitTextFillColor: "transparent",
+                  WebkitTextStroke: "0.9px",
+                  fontSize: 200,
+                  width: 250,
+                  height: 150,
+
+                  ml: 40,
                   color: "white",
-                  fontWeight: "bold",
                 }}
               >
                 2022
@@ -97,7 +64,10 @@ const Layerone = () => {
                 sx={{
                   position: "relative",
                   // zIndex: -1,
-                  fontSize: 170,
+                  ml: 25,
+                  fontSize: 200,
+                  height: 150,
+
                   width: 200,
                   color: "white",
                   fontWeight: "bold",
@@ -107,21 +77,35 @@ const Layerone = () => {
               </Typography>
             </Stack>
           </Grid>
-          <Grid item md={4}>
-            <Box
-              // component={"div"}
-              sx={{
-                mb: 100,
-                width: "100%",
-                height: "100%",
-                flexShrink: 0,
-                position: "relative",
-                backgroundSize: "cover",
-                backgrouundRepeat: "no-repeat",
 
-                backgroundImage: `url(${ChildImage})`,
+          <Grid item md={6}>
+            <Box
+              component={"div"}
+              sx={{
+                position: "absolute",
               }}
-            ></Box>
+            >
+              <img
+                src={ChildImage}
+                height={"100%"}
+                width={"100%"}
+                alt="Boy Image"
+              />
+            </Box>
+            <Box
+              component={"div"}
+              sx={{
+                position: "relative",
+                zIndex: -1,
+              }}
+            >
+              <img
+                src={ChildImage1}
+                height={"70%"}
+                width={"70%"}
+                alt="Star Image"
+              />
+            </Box>
           </Grid>
         </Grid>
       </Box>

@@ -4,14 +4,14 @@ const theme = responsiveFontSizes(
   createTheme({
     spacing: 4,
     typography: {
-      fontFamily: ["Poppins"].join(","),
+      fontFamily: ["Syne"].join(","),
       h1: {
         fontSize: "5rem",
-        fontFamily: "Raleway",
+        fontFamily: "Syne",
       },
       h2: {
         fontSize: "3.5rem",
-        fontFamily: "Open Sans",
+        // fontFamily: "Open Sans",
         fontStyle: "bold",
       },
       h3: {

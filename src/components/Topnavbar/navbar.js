@@ -21,43 +21,38 @@ const Navbar = () => {
     <Box
       sx={{
         width: "100%",
-        height: "80px",
-        flexShrink: 0,
+        height: "auto",
         bgcolor: "black",
       }}
     >
       <Grid
         container
-        justifyContent={"space-around"}
+        justifyContent={"center"}
         alignItems={"center"}
         spacing={2}
+        sx={{
+          borderBottom: "1px solid white",
+        }}
       >
-        <Grid item md={9}>
+        <Grid item lg={6}>
           <Typography
             sx={{
               color: "#FFF",
-              fontFamily: "Poppins",
-              fontSize: "40px",
-              fontStyle: "normal",
-              fontWeight: 275,
-              lineHeight: "normal",
+              fontWeight: 100,
+              fontSize: 50,
             }}
           >
             Shopkart
           </Typography>
         </Grid>
-        <Grid item md={2}>
-          <Stack direction={"row"} spacing={2}>
+        {/* <Grid item lg={4}></Grid> */}
+        <Grid item lg={5}>
+          <Stack direction={"row"} spacing={2} sx={{ justifyContent: "end" }}>
             <Typography
               sx={{
                 color: "#FFF",
 
-                /* Body text 14 */
-                fontFamily: "Work Sans",
-                fontSize: "14px",
-                fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal",
               }}
             >
               WISHLIST (0)
@@ -67,11 +62,7 @@ const Navbar = () => {
                 color: "#FFF",
 
                 /* Body text 14 */
-                fontFamily: "Work Sans",
-                fontSize: "14px",
-                fontStyle: "normal",
                 fontWeight: 400,
-                lineHeight: "normal",
               }}
             >
               BAG (0)
@@ -79,19 +70,20 @@ const Navbar = () => {
           </Stack>
         </Grid>
       </Grid>
-      <Divider variant="fullWidth" light={true} />
       <Grid
         container
         justifyContent={"center"}
         alignItems={"center"}
-        spacing={2}
+        // spacing={2}
       >
         {Object.keys(navbar).map((nav, index) => {
           return (
-            <Grid item md={2.5} key={index}>
+            <Grid item lg={2.75} key={index}>
               <Typography
                 sx={{
                   color: "white",
+                  fontWeight: "bold",
+                  mt: { lg: 1 },
                 }}
               >
                 {navbar[nav].name}

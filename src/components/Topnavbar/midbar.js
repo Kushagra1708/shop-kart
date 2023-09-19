@@ -13,16 +13,21 @@ import {
 const Midbar = (props) => {
   return (
     <>
-      <Box>
+      <Box
+        component={"div"}
+        sx={{
+          mt: 30,
+        }}
+      >
         <Typography
           sx={{
             width: "689px",
             height: "151px",
-            flexShrink: 0,
+            // flexShrink: 0,
             color: "var(--Grey-scale-1000, #000)",
 
             /* H2 title */
-            fontFamily: "Syne",
+            // fontFamily: "Syne",
             fontSize: "90px",
             fontStyle: "normal",
             fontWeight: 600,
