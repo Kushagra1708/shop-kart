@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/shop-kart/static/css/main.073c9b0a.css",
-    "main.js": "/shop-kart/static/js/main.16af7a6d.js",
+    "main.css": "/shop-kart/static/css/main.d3514f8a.css",
+    "main.js": "/shop-kart/static/js/main.39277899.js",
     "static/js/787.416d8b93.chunk.js": "/shop-kart/static/js/787.416d8b93.chunk.js",
     "static/media/jgcap.png": "/shop-kart/static/media/jgcap.b1b1412379253535d094.png",
     "static/media/apg.png": "/shop-kart/static/media/apg.23c95303694a3adba91a.png",
+    "static/media/Syne-Regular.ttf": "/shop-kart/static/media/Syne-Regular.edc4ef9dce61eb376e9b.ttf",
+    "static/media/star.png": "/shop-kart/static/media/star.b13e19c955a8eb5fcd61.png",
     "static/media/logo.svg": "/shop-kart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/shop-kart/index.html",
-    "main.073c9b0a.css.map": "/shop-kart/static/css/main.073c9b0a.css.map",
-    "main.16af7a6d.js.map": "/shop-kart/static/js/main.16af7a6d.js.map",
+    "main.d3514f8a.css.map": "/shop-kart/static/css/main.d3514f8a.css.map",
+    "main.39277899.js.map": "/shop-kart/static/js/main.39277899.js.map",
     "787.416d8b93.chunk.js.map": "/shop-kart/static/js/787.416d8b93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.16af7a6d.js"
+    "static/css/main.d3514f8a.css",
+    "static/js/main.39277899.js"
   ]
 }
