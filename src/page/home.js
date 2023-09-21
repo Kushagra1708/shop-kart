@@ -38,7 +38,7 @@ const Home = () => {
       <Layerone />
       <Midbar value={val} />
       <Bottombar />
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 };

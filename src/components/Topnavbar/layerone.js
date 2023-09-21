@@ -1,6 +1,9 @@
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material";
 import ChildImage from "../../images/jgcap.png";
 import ChildImage1 from "../../images/star.png";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+// import ChildImage1 from "../../images/star.png";
+
 const Layerone = () => {
   return (
     <>
@@ -24,7 +27,28 @@ const Layerone = () => {
             // opacity: 0.2,
             background: "var(--Pimary-colour, #F07E15)",
           }}
-        ></Box>
+        >
+          <Grid item md={12}>
+            <Typography
+              sx={{
+                font: "Work Sans",
+              }}
+            >
+              Oregon jacket
+            </Typography>
+            <Typography>$124</Typography>
+          </Grid>
+          <Grid
+            item
+            md={12}
+            sx={{
+              boderBottom: "1px solid white",
+            }}
+          >
+            <Box></Box>
+          </Grid>
+        </Box>
+        <Box></Box>
       </Box>
       <Box>
         <Grid container justifyContent={"center"}>
@@ -106,6 +130,28 @@ const Layerone = () => {
                 alt="Star Image"
               />
             </Box>
+          </Grid>
+          <Grid
+            item
+            md={12}
+            sx={{
+              boderBottom: "1px solid white",
+            }}
+          >
+            <img />
+          </Grid>
+          <Grid item md={10} justifyContent="flex-start">
+            <Typography
+              sx={{
+                // borderBottom: "1px solid white",
+                color: "white",
+                marginTop: 20,
+                fontSize: 15,
+              }}
+            >
+              <u>See more</u>
+              <ArrowOutwardIcon />
+            </Typography>
           </Grid>
         </Grid>
       </Box>
